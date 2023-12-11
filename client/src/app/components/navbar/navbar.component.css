@@ -1,0 +1,42 @@
+
+.navbar-brand span {
+    font-size: 1.2em;
+    font-weight: bold;
+    background: linear-gradient(to right, #f38721, 
+                    #ce8322, #e0d31e, #2ecc48); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+
+.nav-item a span {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #f38721b7;
+    padding: 5px;
+}
+
+.nav-item a span:hover {
+    color: #343a40;
+    background-color: #f38721b7;
+    border-radius: 10px;
+}
+
+.nav-link {
+    text-align: right;
+}
+
+.navbar-toggler {
+    background-color: #f38721a8;
+    border-radius: 10px;
+}
+
+.navbar-toggler:hover {
+    background-color: #e69927be;
+}
+
+app-search {
+    width: 50%;
+    float: right;
+    display: flex;
+    align-items: center;
+}

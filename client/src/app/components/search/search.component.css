@@ -1,0 +1,35 @@
+.search-component {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    height: 33px;
+    font-size: 1em;
+    color: white;
+    background-color: #5052559a;
+    border: 3px solid #f38721b4;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    outline: none;
+    padding-left: 4px;
+}
+
+button {
+    height: 33px;
+    color: white;
+    background-color: #f38721b4;
+    border: 3px solid #f38721b4;
+    border-radius: 0px 5px 5px 0px;
+    border-left: none;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f38721b4;
+    color:rgba(44, 43, 43, 0.801);
+}

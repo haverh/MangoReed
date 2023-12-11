@@ -1,0 +1,118 @@
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.result-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.item {
+    width: 75%;
+    border: 1px solid black;
+    display: flex;
+    margin: 1% 0;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.item:hover {
+    transform: scale(1.01);
+}
+
+.item img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.mangaInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.mangaInfo h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: chocolate;
+}
+
+.mangaStats {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 5px;
+}
+
+.mangaStats h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    text-align: left;
+    text-align: center;
+    text-align: right;
+}
+
+.description {
+    flex: 1;
+}
+
+.item p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 498px) {
+    .item img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .mangaInfo h2 {
+        font-size: 1.2em;
+    }
+    
+    .mangaStats h3 {
+        font-size: 1.1em;
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 780px) {
+    .item img {
+        width: 175px;
+        height: 225px;
+    }
+
+    .mangaInfo h2 {
+        font-size: 1.3em;
+    }
+    
+    .mangaStats h3 {
+        font-size: 1em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+}

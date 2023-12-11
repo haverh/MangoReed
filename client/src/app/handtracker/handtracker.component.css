@@ -1,0 +1,28 @@
+
+.videobox{
+    border: 3px solid #0063FF;
+    border-color: #0063FF;
+    width: 200px;
+    height: 200px;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(182, 180, 180, 0.562);
+}
+
+.startBtn:hover {
+    background-color: rgba(70, 223, 70, 0.514);
+}
+
+.stopBtn:hover {
+    background-color: rgba(223, 93, 70, 0.514);
+}

@@ -1,0 +1,115 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+.home-content h1 {
+    font-weight: bold;
+}
+
+
+.manga-grid {
+    flex: 1;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.item {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    color: black;
+    text-decoration: none;
+    font-size: .7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item:hover {
+    transform: scale(1.02);
+}
+
+.item img {
+    width: 100%;
+    min-height: 350px;
+    max-height: 350px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.mangaText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mangaText h2 {
+    color: chocolate;
+    font-size: 1.6em;
+    margin: 5px 15px 0 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mangaText h3 {
+    font-size: 1.4em;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.mangaText h3 span {
+    margin: 0 15px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 498px) {
+    .manga-grid {
+        width: 50%;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 780px) {
+    .manga-grid {
+        width: 70%;
+    }
+
+    .item {
+        width: 49.5%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 991px and up) */
+@media only screen and (min-width: 1048px) {
+    .item {
+        width: 32.6%;
+    }
+}
+
+/* Extra Extra large devices (large laptops and desktops, 1578px and up) */
+@media only screen and (min-width: 1578px) {
+    .item {
+        width: 24.25%;
+    }
+}

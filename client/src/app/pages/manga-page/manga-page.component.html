@@ -1,0 +1,41 @@
+<div class="content">
+  <app-navbar></app-navbar>
+  <div class="manga-content">
+    <div class="manga-header">
+      <img [src]="mangaObject.coverImg">
+      <div class="manga-info" #mangaInfo>
+        <h4 class="status">{{status}}</h4>
+        <h1 class="title">{{mangaObject.title}}</h1>
+        <h4 class="alias">Also: <span *ngFor="let alt of altTitles.slice(0,7)">{{alt}}, </span></h4>
+        <p class="description">{{limitedDescription}}<span *ngIf="limitedDescription.length < descriptionLength">...</span>
+          <button class="seeMore" 
+            *ngIf="limitedDescription.length < descriptionLength" 
+            (click)="descriptionModal.showModal()">
+            See more...
+          </button>
+        </p>
+        <dialog class="descriptionModal" #descriptionModal>
+          <div>
+            {{mangaObject.description}}
+          </div>
+          <button (click)="descriptionModal.close()">X</button>
+        </dialog>
+            <!-- <button class="readButton">Start Reading</button> -->
+        </div>
+      <div class="manga-stats">
+        <h3>Year: <span>{{mangaObject.year}}</span></h3>
+        <h3>Rating: <span>{{mangaObject.rating}}⭐</span></h3>
+        <h3>Follows: <span>{{mangaObject.follows}}❤️</span></h3>
+        <h3>Genres: <span *ngFor="let tag of tags.slice(0,4)">{{tag}}, </span></h3>
+      </div>
+    </div>
+    <div class="manga-body">
+      <div class="chapters">
+        <a *ngFor="let chapter of mangaObject.chapters; index as i" [href]="'read/'+mangaObject.id+'/'+i">
+          Vol {{chapter.volume}}. Chapter {{chapter.chapter}}
+        </a>
+      </div>
+    </div>
+  </div>
+  <a href="https://www.vecteezy.com/free-png/mango">Mango PNGs by Vecteezy</a>
+</div>

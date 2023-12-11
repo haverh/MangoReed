@@ -1,0 +1,37 @@
+<div class="content">
+  <app-navbar></app-navbar>
+  <div class="result-content">
+    <h1 style="font-weight: bold; font-family: 'Kanit', sans-serif;">Results</h1>
+    <div *ngIf="viewportWidth < 780; then fewer else more"></div>
+
+    <ng-template #fewer>
+      <a class="item" *ngFor="let manga of searchResults" [href]="'manga/'+manga.id">
+        <img [src]="manga.coverImg">
+        <div class="mangaInfo">
+          <h2>{{manga.title}}</h2>
+          <div class="mangaStats">
+            <h3><span>{{manga.year}}</span><span>{{manga.rating}}⭐</span></h3>
+            <h3><span>{{manga.status.toUpperCase()}}</span><span>{{manga.follows}}❤️</span></h3>
+          </div>
+        </div>
+      </a>
+    </ng-template>
+
+    <ng-template #more>
+      <a class="item" *ngFor="let manga of searchResults" [href]="'manga/'+manga.id">
+        <img [src]="manga.coverImg">
+        <div class="mangaInfo">
+          <h2>{{manga.title}}</h2>
+          <div class="mangaStats">
+            <h3><span>{{manga.year}}</span><span>{{manga.rating}}⭐</span></h3>
+            <h3><span>{{manga.status.toUpperCase()}}</span><span>{{manga.follows}}❤️</span></h3>
+          </div>
+          <p class="description">{{manga.description.split(' ').slice(0,this.descriptionLimit).join(' ')}}
+            <span *ngIf="manga.description.split(' ').slice(0,this.descriptionLimit).join(' ').length < manga.description.length;">...</span>
+          </p>
+        </div>
+      </a>
+    </ng-template>
+
+  </div>
+</div>  

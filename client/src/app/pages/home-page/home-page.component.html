@@ -1,0 +1,17 @@
+<div class="content">
+    <app-navbar></app-navbar>
+    <div class="home-content">
+        <h1>Top Manga</h1>
+        <div class="manga-grid">
+            <a class="item" *ngFor="let manga of top10" [href]="'manga/'+manga.id">
+                <img [src]="manga.coverImg">
+                <div class="mangaText">
+                    <h2>{{manga.title}}</h2>
+                    <h3><span>{{manga.rating}}⭐</span> <span>{{manga.follows}}❤️</span></h3>
+                </div>
+                
+            </a> 
+        </div>
+    </div>
+    <a href="https://www.vecteezy.com/free-png/mango">Mango PNGs by Vecteezy</a>
+</div>

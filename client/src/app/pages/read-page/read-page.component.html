@@ -1,0 +1,40 @@
+<div class="content" [ngClass]="{'theatre-mode': isTheatreMode}">
+    <app-navbar></app-navbar>
+    <div class="read-content">
+        <div class="tracker-section">
+            <app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+    
+            <div [innerHTML]="gesture"></div>
+            <div class="controls">
+                <h4>1 - scroll up        (open)</h4>
+                <h4>2 - scroll down      (closed)</h4>
+                <h4>3 - next chapter     (1 point, 1 open)</h4>
+                <h4>4 - prev chapter     (1 point, 1 closed)</h4>
+                <h4>5 - enlarge          (2 open)</h4>
+                <h4>6 - reduce           (2 closed)</h4>
+                <h4>7 - read mode        (2 pinch)</h4>
+            </div>
+        </div>
+    
+        <div class="reader-section">
+            <div>
+                <h2>{{titleString}}</h2>
+                <div class="chapter-nav">
+                    <button (click)="prevChapter()">Previous Chapter</button>
+                    <button (click)="reduce()">-</button>
+                    <button (click)="toggleTheaterMode()">Read Mode</button>
+                    <button (click)="enlarge()">+</button>
+                    <button (click)="nextChapter()">Next Chapter</button>
+                </div>
+                <div #scrollableReader class="reader">
+                    <img class="snapshot" 
+                        *ngFor="let snapshot of imgFileNames" 
+                        [src]="baseUrl + '/' + hash + '/' + snapshot" 
+                        alt="snapshot"
+                        [style.width] = "imgWidth">
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://www.vecteezy.com/free-png/mango">Mango PNGs by Vecteezy</a>
+</div>
