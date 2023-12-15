@@ -19,6 +19,17 @@ cd ../server
 npm install
 ```
 
+### Built With
+
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+* [![Vue][Vue.js]][Vue-url]
+* [![Angular][Angular.io]][Angular-url]
+* [![Svelte][Svelte.dev]][Svelte-url]
+* [![Laravel][Laravel.com]][Laravel-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![JQuery][JQuery.com]][JQuery-url]
+
 ## Resources Used
 1 - Creating "more" button when element is overlflowing with text  
     * https://stackoverflow.com/questions/44016882/typescript-detect-if-the-div-is-overflow-with-text  
