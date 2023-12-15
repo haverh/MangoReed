@@ -11,7 +11,6 @@
     align-items: center;
     margin: 2% 0;
 }
-
 .manga-header {
     width: 80%;
     border: 1px solid black;
@@ -20,7 +19,6 @@
     align-items: center;
     border-radius: 10px;
 }
-
 img {
     width: 240px;
     height: 100%;
@@ -28,7 +26,6 @@ img {
     border-radius: 10px;
     border: 1px solid black;
 }
-
 .manga-info {
     flex: 3;
     padding: 15px;
@@ -36,60 +33,47 @@ img {
     flex-direction: column;
     align-items: center;
 }
-
 .status, .title {
     text-align: center;
 }
-
 .status {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
-    
 }
-
 .title {
     font-size: 1.5em;
     color: chocolate;
     font-weight: bold;
 }
-
 .alias {
     font-size: 1em;
     margin: 0 30px 20px 30px;
 }
-
 .alias span{
     font-weight: 200;
 }
-
 .description {
     margin: 20px 30px 0 30px;
     font-weight: 200;
 }
-
 span {
     font-weight: 400;
 }
-
 .manga-stats {
     flex: 1;
     padding: 15px;
 }
-
 .manga-stats h3 {
     font-size: 1em;
 }
-
 .manga-stats span {
     font-family: 'Kanit', sans-serif;
     font-weight: 200;
 }
-
 .manga-body {
     width: 80%;
     margin: 20px 0;
 }
-
 .chapters {
     width: 100%;
     height: 50vh;
@@ -101,21 +85,17 @@ span {
     font-family: 'Azeret Mono', monospace;
     box-shadow: 5px 5px 5px grey;
 }
-
 .chapters a {
     text-decoration: none;
     color: black;
     padding: 5px;
 }
-
 .chapters a:hover {
     background-color: rgba(233, 104, 18, 0.301);
 }
-
 .descriptionModal {
     width: 90%;
 }
-
 .seeMore {
     cursor: pointer;
     border-radius: 10px;
@@ -123,11 +103,9 @@ span {
     outline: none;
     background-color: rgba(182, 180, 180, 0.562);
 }
-
 .seeMore:hover {
     background-color: rgba(233, 104, 18, 0.301);
 }
-
 .descriptionModal button {
     width: 30px;
     height: 30px;
@@ -140,20 +118,16 @@ span {
     border-radius: 30%;
     outline: none;
 }
-
 .descriptionModal button:hover {
     background-color: rgba(240, 41, 41, 0.267);
 }
-
 .descriptionModal {
     background-color: rgb(204, 212, 219);
     border-radius: 10px;
 }
-
 .descriptionModal::backdrop {
     background-color: rgba(0, 0, 0, 0.699);
 }
-
 .readButton {
     cursor: pointer;
 }
@@ -164,7 +138,6 @@ span {
         width: 90%;
     }
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 780px) {
@@ -179,33 +152,25 @@ span {
         width: 70%;
         flex-direction: row;
     }
-    
     .manga-info {
-        flex: 3;
         align-items: flex-start;
     }
-    
     .status {
         margin: 0 0 15px 5px;
     }
-
     .title {
         margin: 0;
         text-align: left;
     }
-    
     .alias {
         margin: 0 0 0 5px;
     }
-
     .description {
         margin: 20px 0 0 0;
     }
-
     .descriptionModal {
         width: 50%;
     }
-
     .manga-body {
         width: 70%;
     }
