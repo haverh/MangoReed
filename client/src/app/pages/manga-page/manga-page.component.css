@@ -180,16 +180,8 @@ span {
         flex-direction: row;
     }
     
-    img {
-        width: 240px;
-        height: 100%;
-        margin-right: 15px;
-        border-radius: 10px;
-    }
-    
     .manga-info {
         flex: 3;
-        margin-right: 0;
         align-items: flex-start;
     }
     
