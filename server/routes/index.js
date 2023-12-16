@@ -3,6 +3,11 @@ const coverBaseURL = 'https://uploads.mangadex.org/covers'
 const chapterBaseURL = 'https://api.mangadex.org/at-home/server'
 
 module.exports = function (app, axios) {
+
+	// landing route
+	app.get('/', (req, res) => {
+        res.send("Server is running.");
+    })
 	
 	// Search for manga given title
 	app.get('/search/title/:title', async (req, res) => {
