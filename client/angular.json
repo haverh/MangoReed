@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "at-alternative-interaction-solution": {
+    "mango-reed": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "allowedCommonJsDependencies": ["seedrandom"],
-            "outputPath": "dist/at-alternative-interaction-solution",
+            "outputPath": "dist/mango-reed",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "at-alternative-interaction-solution:build:production"
+              "browserTarget": "mango-reed:build:production"
             },
             "development": {
-              "browserTarget": "at-alternative-interaction-solution:build:development"
+              "browserTarget": "mango-reed:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "at-alternative-interaction-solution:build"
+            "browserTarget": "mango-reed:build"
           }
         },
         "test": {
@@ -103,5 +103,5 @@
       }
     }
   },
-  "defaultProject": "at-alternative-interaction-solution"
+  "defaultProject": "mango-reed"
 }

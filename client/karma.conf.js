@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/at-alternative-interaction-solution'),
+      dir: require('path').join(__dirname, './coverage/mango-reed'),
       subdir: '.',
       reporters: [
         { type: 'html' },

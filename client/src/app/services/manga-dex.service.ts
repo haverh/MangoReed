@@ -14,7 +14,7 @@ export class MangaDexService {
   // Return Promise from express given endpoint
   private sendRequestToExpress(endpoint:string):Promise<any> {
     const mangaDexPromise = async (endpoint:string) => {
-      const response = await fetch(`${this.vercelBaseUrl}${endpoint}`);
+      const response = await fetch(`${this.expressBaseUrl}${endpoint}`);
       const result = await response.json();
       return result;
     }
