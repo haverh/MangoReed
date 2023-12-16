@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class MangaDexService {
   expressBaseUrl:string = 'http://localhost:8888';
-  vercelBaseUrl:string = 'https://mango-reed-server.vercel.app';
+  vercelBaseUrl:string = 'https://mango-reed-server.vercel.app'
 
   constructor(private http:HttpClient) { }
 
