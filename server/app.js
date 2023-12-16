@@ -4,10 +4,10 @@ const axios = require('axios');
 
 const routes = require('./routes/index');
 const port = 8888;
-const app = express();  
+const app = express();
 
 app.use(cors({
-    origin: ['http://localhost:4200'],
+    origin: ['http://localhost:4200','https://mango-reed-haverh.vercel.app'],
     methods: ["GET", "POST"],
     credentials: true,
   }));
