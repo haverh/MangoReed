@@ -7,7 +7,7 @@ const port = 8888;
 const app = express();
 
 app.use(cors({
-    origin: ['https://mango-reed-haverh.vercel.app'],
+    origin: ['https://mango-reed.vercel.app'],
     methods: ["GET", "POST"],
     credentials: true,
   }));
