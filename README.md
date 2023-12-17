@@ -32,7 +32,7 @@ npm install
 
 ## Resources Used
 1 - Creating "more" button when element is overlflowing with text  
-  * https://stackoverflow.com/questions/44016882/typescript-detect-if-the-div-is-overflow-with-text  
+  * https://stackoverflow.com/questions/44016882/typescript-detect-if-the-div-is-overflow-with-text
 2 - MangaDex API  
   * https://api.mangadex.org/docs/  
 3 - CSS Flexbox  
