@@ -21,6 +21,7 @@ npm install
 
 ### Built With
 
+* <img src="https://banner2.cleanpng.com/20180627/whl/kisspng-angularjs-spring-framework-web-application-5b3425bed33165.5288980515301441908651.jpg" alt="Angular" width="200"/>
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
