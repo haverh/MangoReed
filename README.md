@@ -32,19 +32,19 @@ npm install
 
 ## Resources Used
 1 - Creating "more" button when element is overlflowing with text  
-  * https://stackoverflow.com/questions/44016882/typescript-detect-if-the-div-is-overflow-with-text
+   * https://stackoverflow.com/questions/44016882/typescript-detect-if-the-div-is-overflow-with-text  
 2 - MangaDex API  
-  * https://api.mangadex.org/docs/  
+   * https://api.mangadex.org/docs/  
 3 - CSS Flexbox  
-  * https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
+   * https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
 4 - CSS Grid  
-  * https://css-tricks.com/snippets/css/complete-guide-grid/  
+   * https://css-tricks.com/snippets/css/complete-guide-grid/  
 5 - Bootstrap navbar  
-  * https://getbootstrap.com/docs/4.0/components/navbar/  
+   * https://getbootstrap.com/docs/4.0/components/navbar/  
 6 - *ngIf to dynamically load data  
-  * https://chat.openai.com/share/7f12f2a7-5862-4ba5-a9a7-9d697e3e53f7  
+   * https://chat.openai.com/share/7f12f2a7-5862-4ba5-a9a7-9d697e3e53f7  
 7 - Reactively getting view port width in ts file  
-  * https://chat.openai.com/share/5ba7a1b4-2820-4e53-95a8-ff211cf8d54d
+   * https://chat.openai.com/share/5ba7a1b4-2820-4e53-95a8-ff211cf8d54d
 
 ## Things To Keep In Mind
 Is there anything special we need to know in order to run your code?Since the API I am using is a free public API, there are limits to the usage. When testing for prev/next chapter banned when trying to access the API too many times too quickly.
