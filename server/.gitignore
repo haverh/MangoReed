@@ -64,3 +64,7 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# Tokens/Secrets
+client_secret.json
+tokens.json
