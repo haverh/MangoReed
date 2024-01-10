@@ -8,14 +8,14 @@
     -webkit-background-clip: text; 
 }
 
-.nav-item a span {
+.nav-link span {
     font-size: 1.1em;
     font-weight: bold;
     color: #f38721b7;
     padding: 5px;
 }
 
-.nav-item a span:hover {
+.nav-link span:hover {
     color: #343a40;
     background-color: #f38721b7;
     border-radius: 10px;
@@ -40,3 +40,34 @@ app-search {
     display: flex;
     align-items: center;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    grid-template-columns: 3;
+    position: absolute;
+    background-color: #464a4efa;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content span {
+    text-align: center;
+    font-weight: 400;
+}
+
+.dropdown-content span:hover {
+    background-color: #db893db7;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }

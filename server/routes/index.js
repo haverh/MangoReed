@@ -8,6 +8,9 @@ module.exports = function (app, axios) {
 	app.get('/', (req, res) => {
         res.send("Server is running.");
     })
+
+	// Get all tags
+	
 	
 	// Search for manga given title
 	app.get('/search/title/:title', async (req, res) => {

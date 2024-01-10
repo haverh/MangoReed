@@ -8,11 +8,15 @@
   </button>
   
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+    <div class="navbar-nav mr-auto">
         <a class="nav-link" href="#"><span>Home</span></a>
-      </li>
-    </ul>
+        <a class="nav-link dropdown" href="#">
+          <span>Genres</span>
+          <div class="dropdown-content">
+            <span *ngFor="let i of temp">{{i}}</span>
+          </div>
+        </a>
+    </div>
     <app-search></app-search>
   </div>
 </nav>
